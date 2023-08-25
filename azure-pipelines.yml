@@ -4,7 +4,9 @@ trigger:
     # Trigger this pipeline only on commits pushed to the main branch
     - 'master'
 
-pool: AZ1 VSS Agent
+pool:
+  name: 'Azure Pipelines'
+  vmImage: ubuntu-latest
 
 steps:
 - task: GoTool@0
