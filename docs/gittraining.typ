@@ -3,7 +3,7 @@
 
 #show: clean-theme.with(
   short-title: "Git Training",
-  logo: image("logo@2x.png"),
+  logo: image("images/logo@2x.png"),
   footer: "Mark Derricutt, September 2023"
 )
 
@@ -46,7 +46,7 @@
 - Merging Branches
 - Pushing and Pulling Branches
 ]][
-#image("gitbranching.png")
+#image("images/gitbranching.png")
 ]
 
 #slide(title: "Advanced Topics")[

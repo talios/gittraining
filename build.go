@@ -16,16 +16,18 @@ func main() {
 
 	path := "target"
 
+	fonts := client.Host().Directory("./docs/fonts")
 	src := client.Host().Directory(".", dagger.HostDirectoryOpts{
-		Exclude: []string{path, ".git"},
+		Exclude: []string{path, ".git", "./docs/fonts"},
 	})
 
 	typst := client.Container().
 		From("ghcr.io/typst/typst:latest").
+		WithMountedDirectory("/usr/local/share/fonts", fonts).
 		WithMountedDirectory("/src", src).
 		WithWorkdir("/src").
 		WithExec([]string{"mkdir", path}).
-		WithExec([]string{"typst", "compile", "gittraining.typ", path + "/gittraining.pdf"})
+		WithExec([]string{"typst", "compile", "docs/gittraining.typ", path + "/gittraining.pdf"})
 
 	outpath := filepath.Join(".", path)
 	_ = os.MkdirAll(outpath, os.ModePerm)
