@@ -1,0 +1,22 @@
+trigger:
+  branches:
+    include:
+    # Trigger this pipeline only on commits pushed to the main branch
+    - 'master'
+
+pool:
+  name: 'Azure Pipelines'
+  vmImage: ubuntu-latest
+
+steps:
+- task: GoTool@0
+  inputs:
+    version: '1.21'
+  displayName: 'Install Go'
+
+- script: |
+    go get dagger.io/dagger@latest
+  displayName: 'Install Dagger Go SDK and related'
+
+- script: go run build.go
+  displayName: 'Run Dagger'
