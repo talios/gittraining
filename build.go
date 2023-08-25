@@ -16,9 +16,9 @@ func main() {
 
 	path := "target"
 
-	fonts := client.Host().Directory("./docs/fonts")
+	fonts := client.Host().Directory("./fonts")
 	src := client.Host().Directory(".", dagger.HostDirectoryOpts{
-		Exclude: []string{path, ".git", "./docs/fonts"},
+		Exclude: []string{path, ".git"},
 	})
 
 	typst := client.Container().
