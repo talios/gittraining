@@ -20,3 +20,9 @@ steps:
 
 - script: go run build.go
   displayName: 'Run Dagger'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'target'
+    ArtifactName: 'gittraining.pdf'
+    publishLocation: 'Container'
