@@ -24,5 +24,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'target'
-    ArtifactName: 'gittraining.pdf'
+    ArtifactName: 'docs'
     publishLocation: 'Container'
