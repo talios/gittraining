@@ -1,4 +1,4 @@
-#import "@preview/polylux:0.2.0": *
+#import "@preview/polylux:0.3.0": *
 #import themes.clean: *
 
 #show: clean-theme.with(
