@@ -1,4 +1,4 @@
-#import "@preview/polylux:0.3.0": *
+#import "@preview/polylux:0.3.1": *
 #import themes.clean: *
 
 #show: clean-theme.with(
@@ -45,7 +45,8 @@
 - Comparing Branches
 - Merging Branches
 - Pushing and Pulling Branches
-]][
+]]
+[
 #image("images/gitbranching.png")
 ]
 
@@ -96,7 +97,8 @@ cd myrepo
 
 #slide(title: "Elements of a good commit message")[
 #lorem(30)
-][
+]
+[
 ```
 TICKET-001 Short Summary of Change
 
