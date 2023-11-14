@@ -1,6 +1,6 @@
 module github.com/SMX-LTD/git-training
 
-go 1.21.0
+go 1.21
 
 require dagger.io/dagger v0.9.3
 
