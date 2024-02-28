@@ -27,6 +27,7 @@ func main() {
 		WithMountedDirectory("/src", src).
 		WithWorkdir("/src").
 		WithExec([]string{"mkdir", path}).
+		WithExec([]string{"typst", "fonts"}).
 		WithExec([]string{"typst", "compile", "docs/gittraining.typ", path + "/gittraining.pdf"})
 
 	outpath := filepath.Join(".", path)
