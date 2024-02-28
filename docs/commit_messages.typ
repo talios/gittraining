@@ -15,3 +15,9 @@ Longer description of change.
 Footers: Go here.
 ```
 ]
+
+#slide(title: "Interesting Comment Links")[
+  - #link("https://dhwthompson.com/2019/my-favourite-git-commit")[My Favourite Git Commit]
+  - #link("https://www.pullrequest.com/blog/mastering-the-art-of-git-commit-messages/")[Writing Effective Commit Messages in Git: Best Practices and Examples]
+  - #link("https://www.gitkraken.com/learn/git/best-practices/git-commit-message")[Writing a Good Git Commit Message]
+]
