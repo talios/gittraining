@@ -4,7 +4,7 @@
 #show: clean-theme.with(
   short-title: "Git Training",
   logo: image("images/logo@2x.png"),
-  footer: "Mark Derricutt, September 2023"
+  footer: "Mark Derricutt, February 2024"
 )
 
 #show raw: set text(font: "Jetbrains Mono", size: 14pt)
@@ -14,7 +14,7 @@
 #title-slide(
   title: "Git Training",
   subtitle: "How to become a master Git",
-  date: "September 2023",
+  date: "February 2024",
   authors: [Mark Derrigit :-)])
 
 #slide(title: "Gitting Things Done")[
@@ -22,94 +22,30 @@
   - Introduction
   - The Basics
   - Elements of a good commit message
+  - Gerrit and Code Reviews
   - Advanced Topics
 ]]
 
-#slide(title: "The Basics")[
-#line-by-line(mode: "transparent")[
-- Creating and cloning a git repository
-- Making your first commit
-- Staging Files vs Staging Chunks
-- Amending Changes
-- Reverting Changes
-- Browsing Changes
-- Stashing Changes
-]]
+#include "basics.typ"
+#include "commit_messages.typ"
+#include "gerrit.typ"
+#include "branching.typ"
+#include "advanced_topics.typ"
 
-#slide(title: "Branching")[
-#line-by-line(mode: "transparent")[
-- Why Branch?
-- Branching Strategies
-- Creating a Branch
-- Switching Branches
-- Comparing Branches
-- Merging Branches
-- Pushing and Pulling Branches
-]]
-[
-#image("images/gitbranching.png")
-]
-
-#slide(title: "Advanced Topics")[
-#line-by-line(mode: "transparent")[
-- Rebasing
-- Interactively Rebasing
-- The Reflog
-- Worktrees
-]]
-
-#focus-slide("Git")
-
-#new-section-slide("The Basics")
-
-#slide(title: "Creating a git repository")[
-```bash
-mkdir myrepo
-cd myrepo
-git init
-```
-]
-
-#slide(title: "Cloning a git repository")[
-```bash
-git clone https://github.com/SMX-LTD/myrepo.git
-cd myrepo
-```
-]
-
-#slide(title: "Making Your First Commit")[
-#lorem(20)
-]
-
-#slide(title: "Ammending Changes")[
-#lorem(20)
-]
-
-#slide(title: "Reverting Changes")[
-#lorem(20)
-]
-
-#slide(title: "Stashing Changes")[
-#lorem(20)
-]
-
-#new-section-slide("Commit Messages")
-
-#slide(title: "Elements of a good commit message")[
-#lorem(30)
-]
-[
-```
-TICKET-001 Short Summary of Change
-
-Longer description of change.
-
-- Summary should be max 50 characters wide.
-- Detail should be max 75 characters wide.
-
-Footers: Go here.
-```
-]
+// High level how git works under the hood
+// How gerrit review process works with respect to git
+// i.e.
+// * git add
+// * git commit
+// * git commit --amend
+// * git rebase -i
+// * git push
+// How gitflow works
+// * Branch structures and meaning/uses
+// * gitflow tooling
+// * git merge
+// * git rebase (for branches)
+// The reflog
 
 #new-section-slide("Advanced Topics")
 
