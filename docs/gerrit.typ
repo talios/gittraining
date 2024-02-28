@@ -4,10 +4,10 @@
 #focus-slide("Gerrit \u{2014} Code Review")
 
 #slide(title: "Cloning a git repository")[
-- Gerrit Reviews
-- Gerrit comments
-- Responding to gerrit comments - resolved flag
-- Hashtags and Topics
-- Patch Chains
-- Patchset revision comparison
+  - Gerrit Reviews
+  - Gerrit comments
+  - Responding to gerrit comments - resolved flag
+  - Hashtags and Topics
+  - Patch Chains
+  - Patchset revision comparison
 ]

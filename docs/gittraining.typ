@@ -1,24 +1,15 @@
 #import "@preview/polylux:0.3.1": *
 #import themes.clean: *
 
-#show: clean-theme.with(
-  short-title: "Git Training",
-  logo: image("images/logo@2x.png"),
-  footer: "Mark Derricutt, February 2024"
-)
+#show: clean-theme.with(short-title: "Git Training", logo: image("images/logo@2x.png"), footer: "Mark Derricutt, February 2024")
 
 #show raw: set text(font: "Jetbrains Mono", size: 14pt)
 
 #set text(size: 25pt, font: "Blogger Sans")
 
-#title-slide(
-  title: "Git Training",
-  subtitle: "How to become a master Git",
-  date: "February 2024",
-  authors: [Mark Derrigit :-)])
+#title-slide(title: "Git Training", subtitle: "How to become a master Git", date: "February 2024", authors: [Mark Derrigit :-)])
 
-#slide(title: "Gitting Things Done")[
-#line-by-line(mode: "transparent")[
+#slide(title: "Gitting Things Done")[ #line-by-line(mode: "transparent")[
   - Introduction
   - The Basics
   - Elements of a good commit message
@@ -50,5 +41,5 @@
 #new-section-slide("Advanced Topics")
 
 #slide(title: "The Reflog")[
-#lorem(20)
+  #lorem(20)
 ]

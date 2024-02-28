@@ -4,7 +4,7 @@
 #focus-slide("Git \u{2014} Commit Messages")
 
 #slide(title: "Elements of a good commit message")[
-```
+  ```
 TICKET-001 Short Summary of Change
 
 Longer description of change.
